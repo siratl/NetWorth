@@ -14,7 +14,7 @@ function Auth(props) {
   const login = (ev) => {
     ev.preventDefault();
     axios.post("http://127.0.0.1:5000/api/auth/login", formData).then((res) => {
-      console.log("response", res.data);
+      console.log("response", res);
       // props.retrieveUser(res.data.user);
       //props.history.push("/");
     });
